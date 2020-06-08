@@ -1,11 +1,12 @@
 {
-  "name": "vue-components",
+  "name": "@xizhouhezai/my-banner",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "package": "vue-cli-service build --target lib --name my-banner ./src/components/index.js"
   },
   "dependencies": {
     "core-js": "^3.6.5",
@@ -38,5 +39,13 @@
     "> 1%",
     "last 2 versions",
     "not dead"
+  ],
+  "main": "./dist/my-banner.common.js",
+  "files": [
+    "dist/*",
+    "src/*",
+    "public/*",
+    "*.json",
+    "*.js"
   ]
 }
